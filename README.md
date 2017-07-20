@@ -1,4 +1,4 @@
-#iTunes Music Search  
+# iTunes Music Search  
 
 As your final project for this portion of the course, let's take stock of all you have learned and build a real application that is useful and you can share with friends. For this app, we will be using iTunes API to pull data from.
 
@@ -10,7 +10,7 @@ Here are the steps you'll need to take in order to complete this project.
 1. When the user types in a band name and presses the submit button, you should then make the search request. You can trap this with an event listener.
 1. Once you have the search term, you should fetch the specific endpoint and use the results to display a listing of songs related to the search term.
 1. Then to add some features, you should set it up so when a user clicks on one of the songs, it should then play in an <audio> tag that you've also added to the page (see the mockup).
-##Hints & Tips  
+## Hints & Tips  
 
 There will be some new concepts you'll need to work through on this project, so feel free to ask for assistance along the way.
 
@@ -26,7 +26,7 @@ There will be some new concepts you'll need to work through on this project, so 
     * **Hint**: You'll need to dynamically change the src value
 The biggest gotchya will likely be getting the song to play. Since your JavaScript has already run, if you added an click event listener to your page, but you add the content after the fact it won't register. You need to get creative here, but putting your click around the entire results section, and then making sure to get the correct item clicked on. Here is a great article on Event Delegation
 
-#Mockup & Starter Files  
+## Mockup & Starter Files  
 
 Note, the below wireframe is just an idea of the structure. You can follow it perfectly or do something completely different. As long as the requirements above are there, then you win.
 
