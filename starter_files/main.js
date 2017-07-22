@@ -35,9 +35,9 @@ function searchITunes(url, search) {
       musicData.results.forEach(function(result){
         innerHTML += `
     <div class="result" data-url="${result.previewUrl}">
-      <img src="${result.artworkUrl100}" data-url="${result.previewUrl}">
-      <h2 data-url="${result.previewUrl}">${result.trackName}</h2>
-      <h3 data-url="${result.previewUrl}">${result.artistName}</h3>
+      <img src="${result.artworkUrl100}">
+      <h2>${result.trackName}</h2>
+      <h3>${result.artistName}</h3>
     </div>
     `
       })
@@ -46,11 +46,13 @@ function searchITunes(url, search) {
     })
     .then(addListener);
 }
+
 function addListener(){
-  let results = document.querySelectorAll('.results .result')
+  let results = document.querySelectorAll('.results .result *')
   results.forEach(function(listener){
     listener.addEventListener("click",function(e){
-  audioPlayer.setAttribute("src", e.srcElement.dataset.url)
+      console.log(e)
+  audioPlayer.setAttribute("src", e.path[1].dataset.url)
   audioPlayer.setAttribute("autoplay",true)
     })
   })

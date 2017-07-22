@@ -15,3 +15,8 @@ body {
   border: 2px dashed gray;
   margin:10px;
 }
+
+.result * {
+  cursor: pointer; 
+  cursor: hand;
+}
