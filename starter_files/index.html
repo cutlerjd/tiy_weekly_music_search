@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>iTunes Music Search</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <div class="container">
     <header>
       <h1>Really Awesome Music Site</h1>
     </header>
+    <div id="musicPlayer" data-trackId=401187150 data-artist=136975>
+      <img src="http://is2.mzstatic.com/image/thumb/Music/v4/40/d0/29/40d029b5-4c32-53d2-69d1-ea04a513c345/source/60x60bb.jpg">
+      <h4><span>Track: </span>Here Comes the Sun</h4>
+      <h4><span>Collection: </span>Abbey Road</h4>
+      <h4><span>Artist:</span> The Beatles</h4>
+      <audio class="music-player" controls="controls" src="${result.previewUrl}"></audio>
+    </div>
     <section class="player">
       <audio class="music-player" controls="controls" src=""></audio>
     </section>
     <section class="search">
       <div class="search-form">
-        <label for"searchTerm">Search</label>
+        <label for "searchTerm">Search</label>
         <input id="searchTerm" type="text">
         <input id="submit" type="submit">
       </div>
     </section>
     <section class="results"></section>
-    
+
   </div>
   <script src="main.js"></script>
 </body>
+
 </html>

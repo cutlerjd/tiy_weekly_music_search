@@ -31,6 +31,7 @@ function searchITunes(url, search) {
       return response.json();
     })
     .then(function (musicData) {
+      console.log(musicData)
       let innerHTML = ''
       musicData.results.forEach(function(result){
         innerHTML += `
